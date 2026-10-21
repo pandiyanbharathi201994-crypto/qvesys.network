@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg8" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040914"/>
+      <stop offset="50%" stop-color="#081426"/>
+      <stop offset="100%" stop-color="#030711"/>
+    </linearGradient>
+    <linearGradient id="cardGrad8" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e1f36"/>
+      <stop offset="100%" stop-color="#091322"/>
+    </linearGradient>
+    <filter id="glowOrange" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="960" height="540" fill="url(#bg8)"/>
+
+  <!-- Background grid -->
+  <g stroke="#00bfd2" stroke-width="0.5" opacity="0.12">
+    <line x1="0" y1="90" x2="960" y2="90"/>
+    <line x1="0" y1="180" x2="960" y2="180"/>
+    <line x1="0" y1="270" x2="960" y2="270"/>
+    <line x1="0" y1="360" x2="960" y2="360"/>
+    <line x1="0" y1="450" x2="960" y2="450"/>
+    <line x1="160" y1="0" x2="160" y2="540"/>
+    <line x1="320" y1="0" x2="320" y2="540"/>
+    <line x1="480" y1="0" x2="480" y2="540"/>
+    <line x1="640" y1="0" x2="640" y2="540"/>
+    <line x1="800" y1="0" x2="800" y2="540"/>
+  </g>
+
+  <!-- Title Badge -->
+  <rect x="40" y="25" width="400" height="36" rx="18" fill="#09182a" stroke="#00bfd2" stroke-width="1.5"/>
+  <text x="60" y="48" fill="#00bfd2" font-family="'Orbitron', sans-serif" font-weight="700" font-size="13" letter-spacing="1.5">NETWORK DIAGNOSTIC WORKBENCH</text>
+
+  <!-- Pipeline Steps: 1 to 4 -->
+  <!-- Step 1: Link Layer -->
+  <g transform="translate(40, 85)">
+    <rect width="200" height="155" rx="12" fill="url(#cardGrad8)" stroke="#12c89b" stroke-width="2"/>
+    <circle cx="35" cy="35" r="16" fill="#051c16" stroke="#12c89b" stroke-width="1.5"/>
+    <text x="35" y="40" fill="#12c89b" font-family="'Orbitron', sans-serif" font-weight="700" font-size="12" text-anchor="middle">1</text>
+    <text x="65" y="32" fill="#e9f4ff" font-family="'Orbitron', sans-serif" font-weight="700" font-size="12">PHYSICAL / LINK</text>
+    <text x="65" y="48" fill="#12c89b" font-family="'Rajdhani', sans-serif" font-size="12">Cable &amp; Wi-Fi LEDs</text>
+    <rect x="15" y="65" width="170" height="75" rx="6" fill="#050e18" stroke="#19334a"/>
+    <text x="25" y="85" fill="#647d9f" font-family="'Consolas', monospace" font-size="11">&gt; ipconfig /all</text>
+    <text x="25" y="105" fill="#12c89b" font-family="'Consolas', monospace" font-size="11">Link: UP (1 Gbps)</text>
+    <text x="25" y="125" fill="#00bfd2" font-family="'Consolas', monospace" font-size="11">Media Connected ✓</text>
+  </g>
+
+  <!-- Step 2: Gateway Reachability -->
+  <g transform="translate(265, 85)">
+    <rect width="200" height="155" rx="12" fill="url(#cardGrad8)" stroke="#00bfd2" stroke-width="2"/>
+    <circle cx="35" cy="35" r="16" fill="#07222c" stroke="#00bfd2" stroke-width="1.5"/>
+    <text x="35" y="40" fill="#00bfd2" font-family="'Orbitron', sans-serif" font-weight="700" font-size="12" text-anchor="middle">2</text>
+    <text x="65" y="32" fill="#e9f4ff" font-family="'Orbitron', sans-serif" font-weight="700" font-size="12">GATEWAY PING</text>
+    <text x="65" y="48" fill="#00bfd2" font-family="'Rajdhani', sans-serif" font-size="12">Router Reachability</text>
+    <rect x="15" y="65" width="170" height="75" rx="6" fill="#050e18" stroke="#19334a"/>
+    <text x="25" y="85" fill="#647d9f" font-family="'Consolas', monospace" font-size="11">&gt; ping 192.168.1.1</text>
+    <text x="25" y="105" fill="#e9f4ff" font-family="'Consolas', monospace" font-size="11">Reply from 192.168.1.1</text>
+    <text x="25" y="125" fill="#12c89b" font-family="'Consolas', monospace" font-size="11">time=1ms TTL=64 ✓</text>
+  </g>
+
+  <!-- Step 3: Hop Trace -->
+  <g transform="translate(490, 85)">
+    <rect width="200" height="155" rx="12" fill="url(#cardGrad8)" stroke="#ffbd59" stroke-width="2"/>
+    <circle cx="35" cy="35" r="16" fill="#2d2208" stroke="#ffbd59" stroke-width="1.5"/>
+    <text x="35" y="40" fill="#ffbd59" font-family="'Orbitron', sans-serif" font-weight="700" font-size="12" text-anchor="middle">3</text>
+    <text x="65" y="32" fill="#e9f4ff" font-family="'Orbitron', sans-serif" font-weight="700" font-size="12">ROUTE TRACE</text>
+    <text x="65" y="48" fill="#ffbd59" font-family="'Rajdhani', sans-serif" font-size="12">Hop &amp; Latency Test</text>
+    <rect x="15" y="65" width="170" height="75" rx="6" fill="#050e18" stroke="#19334a"/>
+    <text x="25" y="85" fill="#647d9f" font-family="'Consolas', monospace" font-size="11">&gt; tracert 8.8.8.8</text>
+    <text x="25" y="105" fill="#e9f4ff" font-family="'Consolas', monospace" font-size="11">Hop 1: 192.168.1.1 (1ms)</text>
+    <text x="25" y="125" fill="#ffbd59" font-family="'Consolas', monospace" font-size="11">Hop 2: 203.0.113.1 ISP</text>
+  </g>
+
+  <!-- Step 4: DNS Lookup -->
+  <g transform="translate(715, 85)">
+    <rect width="205" height="155" rx="12" fill="url(#cardGrad8)" stroke="#ff7380" stroke-width="2"/>
+    <circle cx="35" cy="35" r="16" fill="#2d0b13" stroke="#ff7380" stroke-width="1.5"/>
+    <text x="35" y="40" fill="#ff7380" font-family="'Orbitron', sans-serif" font-weight="700" font-size="12" text-anchor="middle">4</text>
+    <text x="65" y="32" fill="#e9f4ff" font-family="'Orbitron', sans-serif" font-weight="700" font-size="12">DNS RESOLUTION</text>
+    <text x="65" y="48" fill="#ff7380" font-family="'Rajdhani', sans-serif" font-size="12">Domain to IP</text>
+    <rect x="15" y="65" width="175" height="75" rx="6" fill="#050e18" stroke="#19334a"/>
+    <text x="25" y="85" fill="#647d9f" font-family="'Consolas', monospace" font-size="11">&gt; nslookup qvesys.com</text>
+    <text x="25" y="105" fill="#e9f4ff" font-family="'Consolas', monospace" font-size="11">Server: 1.1.1.1</text>
+    <text x="25" y="125" fill="#12c89b" font-family="'Consolas', monospace" font-size="11">Address: 104.21.5.21 ✓</text>
+  </g>
+
+  <!-- Large Diagnostic Terminal at Bottom -->
+  <g transform="translate(40, 260)">
+    <rect width="880" height="240" rx="14" fill="#050c17" stroke="#1c3852" stroke-width="2"/>
+    <!-- Terminal header -->
+    <path d="M0 14 C0 6.27 6.27 0 14 0 H866 C873.73 0 880 6.27 880 14 V38 H0 Z" fill="#091626"/>
+    <circle cx="22" cy="19" r="6" fill="#ff5f70"/>
+    <circle cx="40" cy="19" r="6" fill="#ffbd59"/>
+    <circle cx="58" cy="19" r="6" fill="#12c89b"/>
+    <text x="440" y="24" fill="#647d9f" font-family="'Orbitron', sans-serif" font-size="11" text-anchor="middle">DIAGNOSTIC CONSOLE · SAFE ISOLATED LAB WORKBENCH</text>
+
+    <!-- Terminal Code / Output -->
+    <g font-family="'Consolas', monospace" font-size="13">
+      <text x="25" y="70" fill="#00bfd2">PS C:\Users\Admin&gt; ping -n 4 192.168.1.1</text>
+      <text x="25" y="95" fill="#91abc8">Pinging 192.168.1.1 with 32 bytes of data:</text>
+      <text x="25" y="120" fill="#12c89b">Reply from 192.168.1.1: bytes=32 time=1ms TTL=64 [PASS]</text>
+      <text x="25" y="145" fill="#12c89b">Reply from 192.168.1.1: bytes=32 time=1ms TTL=64 [PASS]</text>
+
+      <text x="25" y="180" fill="#00bfd2">PS C:\Users\Admin&gt; nslookup example.com</text>
+      <text x="25" y="205" fill="#91abc8">Non-authoritative answer: Name: example.com Address: 93.184.216.34</text>
+      <text x="25" y="228" fill="#12c89b">DNS resolution successful. No packet loss detected (0% loss).</text>
+    </g>
+
+    <!-- Right Side Status Panel -->
+    <g transform="translate(630, 55)">
+      <rect width="230" height="165" rx="8" fill="#0a182b" stroke="#19334a"/>
+      <text x="115" y="30" fill="#00bfd2" font-family="'Orbitron', sans-serif" font-weight="700" font-size="12" text-anchor="middle">HEALTH MONITOR</text>
+      <line x1="20" y1="45" x2="210" y2="45" stroke="#19334a"/>
+      <text x="25" y="72" fill="#e9f4ff" font-family="'Rajdhani', sans-serif" font-size="13">Link Status:</text>
+      <text x="205" y="72" fill="#12c89b" font-family="'Rajdhani', sans-serif" font-weight="700" font-size="13" text-anchor="end">ONLINE</text>
+      <text x="25" y="98" fill="#e9f4ff" font-family="'Rajdhani', sans-serif" font-size="13">Default Gateway:</text>
+      <text x="205" y="98" fill="#12c89b" font-family="'Rajdhani', sans-serif" font-weight="700" font-size="13" text-anchor="end">REACHABLE</text>
+      <text x="25" y="124" fill="#e9f4ff" font-family="'Rajdhani', sans-serif" font-size="13">DNS Resolver:</text>
+      <text x="205" y="124" fill="#12c89b" font-family="'Rajdhani', sans-serif" font-weight="700" font-size="13" text-anchor="end">ACTIVE</text>
+      <text x="25" y="150" fill="#e9f4ff" font-family="'Rajdhani', sans-serif" font-size="13">Packet Loss:</text>
+      <text x="205" y="150" fill="#12c89b" font-family="'Rajdhani', sans-serif" font-weight="700" font-size="13" text-anchor="end">0.0%</text>
+    </g>
+  </g>
+</svg>

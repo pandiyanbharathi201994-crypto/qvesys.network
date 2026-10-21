@@ -1,0 +1,13 @@
+QVE SYS Network Master Class — static version
+==============================================
+
+Open index.html in a modern web browser. The course runs with HTML, CSS and
+JavaScript. Course content is included in course-data.js.
+
+Each person can create an account and log in on this browser. Accounts and each
+person's progress, language and theme are saved in this browser using localStorage.
+They do not sync to other browsers or devices. Clearing browser site data also
+clears saved accounts and progress.
+
+This browser-only login is suitable for a local learning project, not secure
+authentication for a public website.
